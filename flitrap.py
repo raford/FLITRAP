@@ -292,7 +292,7 @@ stock_list = list(complete_fly['StockNumber'])
 
 # Build the GUI frame.
 root = Tk()
-root.title("FlyTrap2")
+root.title("Fly Line Information Trap")
 mainframe = Frame(root)
 mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
 root.columnconfigure(0, weight=1)
