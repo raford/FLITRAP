@@ -2,7 +2,7 @@
 
 # Author: Raymond A. Ford
 #
-# Date 2 May 2015
+# Date: 2 May 2015
 #
 # Email: raford85@yahoo.com
 #   Public Key  : https://pgp.mit.edu/pks/lookup?search=raford85&op=index
@@ -182,8 +182,8 @@ def get_length(index_number):
 def get_left_primer(index_number):
 	"""
 	This function will use the given index number to obtain the left 
-    primer for a particular stock number. It then returns the primer
-    as a string.
+	primer for a particular stock number. It then returns the primer
+	as a string.
 	----------
 	index_number  :=  The index number of the stock number in question
 	"""
@@ -193,8 +193,8 @@ def get_left_primer(index_number):
 def get_right_primer(index_number):
 	"""
 	This function will use the given index number to obtain the right 
-    primer for a particular stock number. It then returns the primer as
-    a string.
+	primer for a particular stock number. It then returns the primer as
+	a string.
 	----------
 	index_number  :=  The index number of the stock number in question
 	"""
@@ -204,9 +204,9 @@ def get_right_primer(index_number):
 def get_fasta(current_directory, stock_number):
 	"""
 	This function will locate and open the FASTA file for a given stock
-    number. It will return the contents of the file if such a file 
-    exists, and will return 'No such file exists' for stock numbers 
-    that do not have a FASTA file.
+	number. It will return the contents of the file if such a file 
+	exists, and will return 'No such file exists' for stock numbers 
+	that do not have a FASTA file.
 	----------
 	current_directory  :=  The current working directory.
 	stock_number       :=  The stock number that we want the FASTA file for.
@@ -232,7 +232,7 @@ def get_weburl(index_number):
 	return complete_fly['VideoLink'][index_number]
 
 
-def copy_to_clipboard():
+def copy_to_clipboard(event):
 	root.clipboard_clear()
 	root.clipboard_append(fasta_str)
 	return ''
