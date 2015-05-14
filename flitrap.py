@@ -61,7 +61,6 @@ import pandas
 import webbrowser
 from Tkinter import *
 
-
 def get_complete_fly(current_directory):
 	"""
 	This function will use the current working directory to find and
@@ -73,7 +72,6 @@ def get_complete_fly(current_directory):
 	"""
 	data = "complete_fly.csv"
 	return current_directory + data
-
 
 def get_stk_index(list, stock_number):
 	"""
@@ -90,116 +88,30 @@ def get_stk_index(list, stock_number):
 	else:
 		return "nichts"
 
-
-def get_fragment(index_number):
+def get_entry(dataframe, column_name, index_number):
 	"""
-	This will use the given index_number to find the fragment 
-    associated with a particular stock number. It then returns that 
-    fragment as a string.
+	This function will get and return the index_number-th value in
+	column_name found in dataframe.
 	----------
-	index_number  :=  The index number of the stock number in question
+	dataframe     :=  The dataframe containing ALL information that
+	                  FLITrap will return.
+	column_name   :=  The column containing the desired information.
+	index_number  :=  The index number of the desired information.
 	"""
-	return complete_fly['Fragment'][index_number]
+	return dataframe[column_name][index_number]
 
-
-def get_fbsf(index_number):
+def get_length(dataframe, column_name, index_number):
 	"""
-	This will use the given index_number to find the fbsf associated 
-    with a particular stock number. It then returns that fbsf as a 
-    string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['FBsf'][index_number]
-
-
-def get_insertion(index_number):
-	"""
-	This will use the given index number to find the insertion 
-    associated with a particular stock number. It then returns that 
-    insertion as a string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['Insertion'][index_number]
-
-
-def get_gene(index_number):
-	"""
-	This will use the given index number to find the gene associated 
-    with a particular stock number. It then returns that gene as a 
-    string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['Gene'][index_number]
-
-
-def get_fbgn(index_number):
-	"""
-	This will use the given index number to find the FBgn associated 
-    with a particular stock number. It then returns that tag as a 
-    string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['FBgn'][index_number]
-
-
-def get_ncbi(index_number):
-	"""
-	This will use the given index number to find the NCBI tag 
-    associated with a particular stock number. It then returns that tag
-    as a string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['NCBI'][index_number]
-
-
-def get_coordinates(index_number):
-	"""
-	This will use the given index number to find the coordinates for a 
-	particular stock number. It then returns the coordinates as a 
-    string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['Coordinate'][index_number]
-
-
-def get_length(index_number):
-	"""
-	This will use the given index number to find the length for a 
+	This will use the given information to find the length for a 
 	particular stock number. It then returns the length as a string.
 	----------
-	index_number  :=  The index number of the stock number in question
+	dataframe     :=  The dataframe containing ALL information that
+	                  FLITrap will return.
+	column_name   :=  The column containing the desired information.
+	index_number  :=  The index number of the desired information.
 	"""
-	raw_len = complete_fly['SeqLength'][index_number]
+	raw_len = dataframe[column_name][index_number]
 	return '(' + str(raw_len)[:-1] + 'bp)'
-
-
-def get_left_primer(index_number):
-	"""
-	This function will use the given index number to obtain the left 
-	primer for a particular stock number. It then returns the primer
-	as a string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['LeftPrimer'][index_number]
-
-
-def get_right_primer(index_number):
-	"""
-	This function will use the given index number to obtain the right 
-	primer for a particular stock number. It then returns the primer as
-	a string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['RightPrimer'][index_number]
-
 
 def get_fasta(current_directory, stock_number):
 	"""
@@ -209,7 +121,8 @@ def get_fasta(current_directory, stock_number):
 	that do not have a FASTA file.
 	----------
 	current_directory  :=  The current working directory.
-	stock_number       :=  The stock number that we want the FASTA file for.
+	stock_number       :=  The stock number that we want the FASTA
+	                       file for.
 	"""
 	data_location = "/DMel_FASTA_files/"
 	file_location = DATALOCATION + data_location + stock_number + ".fasta"
@@ -221,26 +134,12 @@ def get_fasta(current_directory, stock_number):
 	except:
 		return "No such file exists"
 
-
-def get_weburl(index_number):
-	"""
-	This will use the given index number to find the url for a 
-	particular stock number. It then returns the url as a string.
-	----------
-	index_number  :=  The index number of the stock number in question
-	"""
-	return complete_fly['VideoLink'][index_number]
-
-
-def copy_to_clipboard(event):
+def copy_to_clipboard():
 	root.clipboard_clear()
 	root.clipboard_append(fasta_str)
-	return ''
-
 
 def callback(event):
 	webbrowser.open_new(weburl)
-
 
 def fly_search(*args):
 	try:
@@ -248,21 +147,21 @@ def fly_search(*args):
 		status.set('')
 		index = get_stk_index(stock_list, value)
 		var_stk.set(str(complete_fly['StockNumber'][index]))
-		var_frag.set(get_fragment(index))
-		var_fbsf.set(get_fbsf(index))
-		var_insertion.set(get_insertion(index))
-		var_gene.set(get_gene(index))
-		var_fbgn.set(get_fbgn(index))
-		var_ncbi.set(get_ncbi(index))
-		var_coord.set(get_coordinates(index))
-		var_length.set(get_length(index))
-		var_l_primer.set(get_left_primer(index))
-		var_r_primer.set(get_right_primer(index))
+		var_frag.set(get_entry(complete_fly, 'Fragment', index))
+		var_fbsf.set(get_entry(complete_fly, 'FBsf', index))
+		var_insertion.set(get_entry(complete_fly, 'Insertion', index))
+		var_gene.set(get_entry(complete_fly, 'Gene', index))
+		var_fbgn.set(get_entry(complete_fly, 'FBgn', index))
+		var_ncbi.set(get_entry(complete_fly, 'NCBI', index))
+		var_coord.set(get_entry(complete_fly, 'Coordinate', index))
+		var_length.set(get_length(complete_fly, 'SeqLength', index))
+		var_l_primer.set(get_entry(complete_fly, 'LeftPrimer', index))
+		var_r_primer.set(get_entry(complete_fly, 'RightPrimer', index))
 		global fasta_str # This is needed for the 'copy' button to work.
 		fasta_str = get_fasta(DATALOCATION, str(value))
 		var_fasta.set(fasta_str)
 		global weburl # This is needed for the video page button to work.
-		weburl = get_weburl(index)
+		weburl = get_entry(complete_fly, 'VideoLink', index)
 		var_link.set(weburl)
 		root.clipboard_clear()
 		root.clipboard_append(fasta_str)	
@@ -283,12 +182,10 @@ def fly_search(*args):
 		var_link.set('')
 		pass
 
-
 # Read data in and place BDSC stock numbers into a list
 DATALOCATION = os.getcwd() + '/Data/'
 complete_fly = pandas.read_csv(get_complete_fly(DATALOCATION))
 stock_list = list(complete_fly['StockNumber']) 
-
 
 # Build the GUI frame.
 root = Tk()
@@ -298,17 +195,14 @@ mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 
-
 # User input to search for stock number
 user_input = StringVar()
 user_input_entry = Entry(mainframe, width=7, textvariable=user_input)
 user_input_entry.grid(column=1, row=0, sticky=(W, E))
 
-
 # Error notification if user input is invalid
 status = StringVar()
 Label(mainframe, textvariable=status).grid(column=1, row=1, sticky=(W, E))
-
 
 # This section draws all of the empty boxes for each section. Each box has its
 # own block of code.
@@ -383,7 +277,6 @@ var_fasta = StringVar()
 box_fasta.config(textvariable=var_fasta, relief = 'sunken')
 box_fasta.grid(column=1, row=12, sticky=W)
 
-
 # Labels for the data to be pulled
 Label(mainframe, text="Enter a Stock Number:").grid(column=0, row=0, sticky=W)
 Label(mainframe, text="Stock Number:").grid(column=0, row=2, sticky=E)
@@ -393,11 +286,10 @@ Label(mainframe, text="Insertion:").grid(column=0, row=5, sticky=E)
 Label(mainframe, text="Gene:").grid(column=0, row=6, sticky=E)
 Label(mainframe, text="FBgn:").grid(column=0, row=7, sticky=E)
 Label(mainframe, text="NCBI:").grid(column=0, row=8, sticky=E)
-Label(mainframe, text="Coordinates: ").grid(column=0, row=9, sticky=E)
-Label(mainframe, text="Left Primer: ").grid(column=0, row=10, sticky=E)
+Label(mainframe, text="Coordinates:").grid(column=0, row=9, sticky=E)
+Label(mainframe, text="Left Primer:").grid(column=0, row=10, sticky=E)
 Label(mainframe, text="Right Primer:").grid(column=0, row=11, sticky=E)
-Label(mainframe, text="FASTA: ").grid(column=0, row=12, sticky=E)
-
+Label(mainframe, text="FASTA:").grid(column=0, row=12, sticky=E)
 
 # Hyperlink button for expression data video
 link = Button(mainframe, text="Click Here to View Expression Data Video", 
@@ -406,12 +298,10 @@ var_link = StringVar()
 link.grid(column=1, row=13, sticky=W)
 link.bind("<Button-1>", callback)
 
-
 # Find button can be clicked or the user can just press the Enter/Return key.
 Button(mainframe, text="Find", command=fly_search).grid(column=2, 
                                                         row=0, sticky=W)
 root.bind('<Return>', fly_search)
-
 
 # Button can be clicked or the user can just press the CTRL+C key combo.
 Button(mainframe, text="Copy", command=copy_to_clipboard).grid(column=2, 
