@@ -64,9 +64,9 @@ from Tkinter import *
 def get_complete_fly(current_directory):
 	"""
 	This function will use the current working directory to find and
-    return the path of the complete_fly.csv file created through 
-    wescraping relevant data from janelia.org and flybase.org on
-    2 May 2015.
+	return the path of the complete_fly.csv file created through 
+	wescraping relevant data from janelia.org and flybase.org on
+	2 May 2015.
 	----------
 	current_directory  :=  the current working directory
 	"""
@@ -76,7 +76,7 @@ def get_complete_fly(current_directory):
 def get_stk_index(list, stock_number):
 	"""
 	This function will find the index number of a particular stock
-    number and return that index number.
+	number and return that index number.
 	----------
 	list          :=  A list containing all of the stock numbers. This
                         list is created in the actual program.
