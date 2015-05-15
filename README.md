@@ -36,6 +36,7 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 3. Open your machine's terminal and navigate to the location that you placed the uncompressed `.zip` file.
 
 ![](http://i.imgur.com/Dabhj7M.png)
+
 4. Type the following into your terminal and press enter/return to start FLITrap. You should see something similar to the following.
 
 ![](http://i.imgur.com/iDhFAcx.png)
