@@ -1,6 +1,8 @@
-## ![](http://i.imgur.com/RcRWvzE.jpg) FLITrap: Fly Line Information Trap
+# ![](http://i.imgur.com/RcRWvzE.jpg) FLITrap: Fly Line Information Trap
 
 
+
+## Screenshots of FLITrap in action
 Below is a screenshot of FLITrap being used to search for information about BDSC stock number 47708.
 
 ![](http://i.imgur.com/GOoeEBx.png "Screenshot of FLITrap")
