@@ -30,9 +30,11 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 1. Download the `flitrap-master.zip` as seen below.
 ![](http://i.imgur.com/gyrclLg.png)
 
-2. After the file has completed downloading, move the `.zip` to the desired location and uncompress it. You should see something similar to the following.
-
+2. After the file has completed downloading, move the `.zip` to the desired location and uncompress it (for this example we have placed it on our `Desktop`). You should see something similar to the following.
 ![](http://i.imgur.com/RhGR02H.png)
+
+3. Open your machine's terminal and navigate to the location that you placed the uncompressed `.zip` file.
+![](http://i.imgur.com/Dabhj7M.png)
 
 
 ## Screenshots of FLITrap in action
