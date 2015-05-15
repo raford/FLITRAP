@@ -1,6 +1,6 @@
 # ![](http://i.imgur.com/RcRWvzE.jpg) FLITrap: Fly Line Information Trap
 
-> FLITrap is a GUI application written in Python, using the Tkinter module, that allows a researcher to access pieces of data related the the GAL4 lines of a particular Bloomington Drosophila Stock Center stock number without having to visit numerous websites.
+> FLITrap is a GUI application written in Python, using the Tkinter module, that allows a researcher to access pieces of data from the the GAL4 lines of a particular Bloomington Drosophila Stock Center stock number without having to visit numerous websites.
 
 ### Table of contents
 1. [What is FLITrap?](https://github.com/raford/flitrap#what-is-flitrap)
@@ -9,21 +9,30 @@
 4. [Acknowledgements](https://github.com/raford/flitrap#acknowledgements)
 5. [References](https://github.com/raford/flitrap#references)
 
-## What is FLITrap?
 
-## How do I run FLYTrap on my machine?
+## What is FLITrap?
+FLITrap makes use of several pieces of data obtained from the HHMI Janelia Farm[1], Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] --- obtained via webscraping --- to allow a researcher to access data related to _D._melanogaster_ BDSC GAL4 lines without having to visit numerous sites. This in turn allows a researcher to work more efficiently and not waste his or her precious time. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf (et cetera) for a particular stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet). Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application should run on Windows, OSX, and various GNU/Linux distributions with little problems --- assuming the necessary modules are installed.
+
+
+## How do I run FLITrap on my machine?
 There are two ways to run FLITrap on your machine: use a standalone version of FLITrap, or download all of the files needed to run FLITrap. We will show you how to run FLITrap for both of these ways.
 
 ### Standalone versions
-We have made standalone versions of FLITrap available for the following machines:
+We have made standalone versions of FLITrap available for the following:
 * OSX 10.10 (Yosemite)
 
 Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zkm6gbizss5pf1u/AAC5nJ-rn-YrjmJE0s3dLsyca?dl=0)
 
 
-### Download all of the files
-In order to run FLITrap without downloading a standalone version of FLITrap, you will need to download the "master-flitrap" zip. This can be accomplished within this page by clicking the highlighted button in the screenshot below.
+### Downloading all of the files
+In order to run FLITrap without downloading a standalone version of FLITrap, you will need to download the "master-flitrap" zip. This can be accomplished by following the steps below. 
 
+1. Download the `flitrap-master.zip` as seen below.
+![](http://i.imgur.com/gyrclLg.png)
+
+2. After the file has completed downloading, move the `.zip` to the desired location and uncompress it. You should see something similar to the following.
+
+![](http://i.imgur.com/RhGR02H.png)
 
 
 ## Screenshots of FLITrap in action
