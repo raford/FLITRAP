@@ -11,7 +11,7 @@
 
 
 ## What is FLITrap?
-FLITrap makes use of several pieces of data obtained from the HHMI Janelia Farm[1], Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] --- obtained via webscraping --- to allow a researcher to access data related to _D._melanogaster_ BDSC GAL4 lines without having to visit numerous sites. This in turn allows a researcher to work more efficiently and not waste his or her precious time. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf (et cetera) for a particular stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet). Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application should run on Windows, OSX, and various GNU/Linux distributions with little problems --- assuming the necessary modules are installed.
+FLITrap makes use of several pieces of data obtained from the HHMI Janelia Farm[1], Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] --- obtained via webscraping --- to allow a researcher to access data related to _D.melanogaster_ BDSC GAL4 lines without having to visit numerous sites. This in turn allows a researcher to work more efficiently and not waste his or her precious time looking for these data points. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf (etc.) for a particular stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet). Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application should run on Windows, OSX, and various GNU/Linux distributions with little problems --- assuming the necessary modules are installed.
 
 
 ## How do I run FLITrap on my machine?
@@ -37,6 +37,10 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 
 ![](http://i.imgur.com/Dabhj7M.png)
 
+4. Type the following into your terminal and press enter/return to start FLITrap. You should see something similar to the following.
+
+![](http://i.imgur.com/iDhFAcx.png)
+
 
 ## Screenshots of FLITrap in action
 Below is a screenshot of FLITrap being used to search for information about BDSC stock number 47708.
@@ -51,3 +55,6 @@ If you should happen to enter an invalid BDSC stock number, then you will see th
 This work is supported in part by the NSF grant DUE-0926721 and NIH-NIMHD grant 5G12MD007592. I would like to thank the University of Texas at El Paso's [Undergraduate Participation in Bioinformatics Training (UPBiT)](http://www.bioinformatics.utep.edu/UPBiT/index.php) for giving me the opportunity to participate in bioinformatics research as an undergraduate majoring in statistics. Under the mentorship of Professors Ming-Ying Leung and Kyung-An Han, I was given what I feel is a once-in-a-lifetime opportunity to learn more about statistics, computer science, and biology---beyond what was offered in the courses required for my degree.
 
 ## References
+1. HHMI Janelia Farm reference here
+2. BDSC reference here
+3. FlyBase reference here
