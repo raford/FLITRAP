@@ -37,13 +37,14 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 
 ![](http://i.imgur.com/Dabhj7M.png)
 
-* Type `python flitrap` into your terminal and press enter/return to start FLITrap. You should see something similar to the image below.
+* Type `python flitrap.py` into your terminal and press enter/return to start FLITrap. You should see something similar to the image below.
 
 ![](http://i.imgur.com/iDhFAcx.png)
 
 * Congratulations! You can now use FLITrap to find information about different BDSC stock numbers.
 
-#### WAIT!!! I am using Python 3.X.X NOT Python 2.7.X!!!
+#### WAIT!!! I am using Python 3.X NOT Python 2.7!!!
+No problem! Just change line 62 from `from Tkinter import *` to `from tkinter import *` and everything should _just work._
 
 
 
