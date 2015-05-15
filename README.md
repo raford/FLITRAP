@@ -37,7 +37,7 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 
 ![](http://i.imgur.com/Dabhj7M.png)
 
-* Type the following into your terminal and press enter/return to start FLITrap. You should see something similar to the following.
+* Type `python flitrap` into your terminal and press enter/return to start FLITrap. You should see something similar to the image below.
 
 ![](http://i.imgur.com/iDhFAcx.png)
 
