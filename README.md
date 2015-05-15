@@ -2,11 +2,11 @@
 
 
 ### Table of contents
-1. What is FLITrap?
-2. How do I run FLITrap on my machine?
-3. Screenshots of FLITrap in action
-4. Acknowledgements
-5. References
+1. [What is FLITrap?](https://github.com/raford/flitrap#what-is-flitrap)
+2. [How do I run FLITrap on my machine?](https://github.com/raford/flitrap#how-do-i-run-flytrap-on-my-machine)
+3. [Screenshots of FLITrap in action](https://github.com/raford/flitrap#screenshots-of-flitrap-in-action)
+4. [Acknowledgements](https://github.com/raford/flitrap#acknowledgements)
+5. [References](https://github.com/raford/flitrap#references)
 
 ## What is FLITrap?
 
