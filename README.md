@@ -11,7 +11,7 @@
 
 
 ## What is FLITrap?
-FLITrap makes use of several pieces of data obtained from the HHMI Janelia Farm[1], Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] --- obtained via webscraping --- to allow a researcher to access data related to _D.melanogaster_ BDSC GAL4 lines without having to visit numerous sites. This in turn allows a researcher to work more efficiently and not waste his or her precious time looking for these data points. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf (etc.) for a particular stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet). Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application should run on Windows, OSX, and various GNU/Linux distributions with little problems --- assuming the necessary modules are installed.
+FLITrap makes use of several pieces of data obtained from the HHMI Janelia Farm[1], Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] --- obtained via webscraping --- to allow a researcher to access data related to _D.melanogaster_ BDSC GAL4 lines without having to visit numerous sites. This in turn allows a researcher to work more efficiently and not waste his or her precious time looking for these data points. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf (etc.) for a particular stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet). Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application _should_ run on Windows, OSX, and various GNU/Linux distributions with little problems --- assuming the necessary modules are installed.
 
 
 ## How do I run FLITrap on my machine?
@@ -36,7 +36,6 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 3. Open your machine's terminal and navigate to the location that you placed the uncompressed `.zip` file.
 
 ![](http://i.imgur.com/Dabhj7M.png)
-
 4. Type the following into your terminal and press enter/return to start FLITrap. You should see something similar to the following.
 
 ![](http://i.imgur.com/iDhFAcx.png)
