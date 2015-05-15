@@ -27,19 +27,24 @@ Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zk
 ### Downloading all of the files
 In order to run FLITrap without downloading a standalone version of FLITrap, you will need to download the "master-flitrap" zip. This can be accomplished by following the steps below. 
 
-1. Download the `flitrap-master.zip` as seen below.
+* Download the `flitrap-master.zip` as seen below (by clicking the button in the red box).
 ![](http://i.imgur.com/gyrclLg.png)
 
-2. After the file has completed downloading, move the `.zip` to the desired location and uncompress it (for this example we have placed it on our `Desktop`). You should see something similar to the following.
+* After the file has completed downloading, move the `.zip` to the desired location and uncompress it (for this example we have placed it on our `Desktop`). You should see something similar to the following.
 ![](http://i.imgur.com/RhGR02H.png)
 
-3. Open your machine's terminal and navigate to the location that you placed the uncompressed `.zip` file.
+* Open your machine's terminal and navigate to the location that you placed the uncompressed `.zip` file.
 
 ![](http://i.imgur.com/Dabhj7M.png)
 
-4. Type the following into your terminal and press enter/return to start FLITrap. You should see something similar to the following.
+* Type the following into your terminal and press enter/return to start FLITrap. You should see something similar to the following.
 
 ![](http://i.imgur.com/iDhFAcx.png)
+
+* Congratulations! You can now use FLITrap to find information about different BDSC stock numbers.
+
+#### WAIT!!! I am using Python 3.X.X NOT Python 2.7.X!!!
+
 
 
 ## Screenshots of FLITrap in action
