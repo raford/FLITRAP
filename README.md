@@ -5,10 +5,8 @@
 ### Table of contents
 1. [What is FLITrap?](https://github.com/raford/flitrap#what-is-flitrap)
 2. [How do I run FLITrap on my machine?](https://github.com/raford/flitrap#how-do-i-run-flytrap-on-my-machine)
-
-..* [Standalone versions](https://github.com/raford/flitrap#standalone-versions)
-..* [Downloading all of the files](https://github.com/raford/flitrap#downloading-all-of-the-files)
-
+* [Standalone versions](https://github.com/raford/flitrap#standalone-versions)
+* [Downloading all of the files](https://github.com/raford/flitrap#downloading-all-of-the-files)
 3. [Screenshots of FLITrap in action](https://github.com/raford/flitrap#screenshots-of-flitrap-in-action)
 4. [Acknowledgements](https://github.com/raford/flitrap#acknowledgements)
 5. [References](https://github.com/raford/flitrap#references)
