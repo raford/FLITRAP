@@ -1,17 +1,19 @@
 # ![](http://i.imgur.com/RcRWvzE.jpg) FLITrap: Fly Line Information Trap
 
-> FLITrap is a GUI application written in Python, using the Tkinter module, that allows a researcher to access pieces of data from the the GAL4 lines of a particular Bloomington Drosophila Stock Center stock number without having to visit numerous websites.
+> FLITrap is a GUI application written in Python that allows a researcher to access pieces of data from the the GAL4 lines of a particular Bloomington Drosophila Stock Center stock number without having to visit numerous websites.
 
 ### Table of contents
 1. [What is FLITrap?](https://github.com/raford/flitrap#what-is-flitrap)
 2. [How do I run FLITrap on my machine?](https://github.com/raford/flitrap#how-do-i-run-flytrap-on-my-machine)
+..* [Standalone versions](https://github.com/raford/flitrap#standalone-versions)
+..* [Downloading all of the files](https://github.com/raford/flitrap#downloading-all-of-the-files)
 3. [Screenshots of FLITrap in action](https://github.com/raford/flitrap#screenshots-of-flitrap-in-action)
 4. [Acknowledgements](https://github.com/raford/flitrap#acknowledgements)
 5. [References](https://github.com/raford/flitrap#references)
 
 
 ## What is FLITrap?
-FLITrap makes use of several pieces of data obtained from the HHMI Janelia Farm[1], Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] --- obtained via webscraping --- to allow a researcher to access data related to _D.melanogaster_ BDSC GAL4 lines without having to visit numerous sites. This in turn allows a researcher to work more efficiently and not waste his or her precious time looking for these data points. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf (etc.) for a particular stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet). Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application _should_ run on Windows, OSX, and various GNU/Linux distributions with little problems --- assuming the necessary modules are installed.
+FLITrap makes use of several pieces of data obtained from the HHMI Janelia Farm[1], Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] --- obtained via webscraping --- to allow a researcher to access data related to _D.melanogaster_ BDSC GAL4 lines without having to visit numerous sites. This in turn allows a researcher to work more efficiently and not waste his or her time looking for these data points. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf (etc.) for a particular stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet). Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application _should_ run on Windows, OSX, and various GNU/Linux distributions with little problems --- assuming the necessary modules are installed.
 
 
 ## How do I run FLITrap on my machine?
@@ -30,7 +32,7 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 * Download the `flitrap-master.zip` as seen below (by clicking the button in the red box).
 ![](http://i.imgur.com/gyrclLg.png)
 
-* After the file has completed downloading, move the `.zip` to the desired location and uncompress it (for this example we have placed it on our `Desktop`). You should see something similar to the following.
+* After the file has completed downloading, move the `.zip` to a desired location and uncompress it (for this example we have placed it on our `Desktop`). You should see something similar to the following.
 ![](http://i.imgur.com/RhGR02H.png)
 
 * Open your machine's terminal and navigate to the location that you placed the uncompressed `.zip` file.
@@ -43,10 +45,8 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 
 * Congratulations! You can now use FLITrap to find information about different BDSC stock numbers.
 
-#### WAIT!!! I am using Python 3.X NOT Python 2.7!!!
+##### WAIT!!! I am using Python 3.X NOT Python 2.7!!!
 No problem! Just change line 62 from `from Tkinter import *` to `from tkinter import *` and everything should _just work._
-
-
 
 ## Screenshots of FLITrap in action
 Below is a screenshot of FLITrap being used to search for information about BDSC stock number 47708.
