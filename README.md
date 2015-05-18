@@ -22,8 +22,32 @@ We have made standalone versions of FLITrap available for the following:
 * OSX 10.10 (Yosemite)
 * OSX 10.7 (Lion)
 
-Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zkm6gbizss5pf1u/AAC5nJ-rn-YrjmJE0s3dLsyca?dl=0) The OSX standalone versions were created using [py2app](https://pythonhosted.org/py2app/).
+Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zkm6gbizss5pf1u/AAC5nJ-rn-YrjmJE0s3dLsyca?dl=0)
 
+##### Installing a standalone version of FLITrap on OSX
+Following these instructions will allow you to have a standalone version FLITrap on an OSX machine.
+
+* Download the correct standalone version for your machine.
+![](http://i.imgur.com/vYnZd0z.png)
+
+* Uncompress the `zip` file and it to view its contents, and open the `dist` folder.
+![](http://i.imgur.com/VDHaNpx.png)
+
+* Click-on and drag `FLITrap` to your `Applications` folder.
+![](http://i.imgur.com/K0zVvZu.png)
+
+* You can now delete the `.zip` file and its expanded version from your machine.
+
+* The first time that you run FLITrap you might be presented with the following window.
+![](http://i.imgur.com/Y6HSXiQ.png)
+
+* To fix this issue, you will need to open your `System Preferences` and select the `Security & Privacy` option.
+![](http://i.imgur.com/Feg9tFl.png)
+
+* Select the `Open Anyway` option to launch FLITrap.
+![](http://i.imgur.com/q9HyeCA.png)
+
+* Congratulations! You can now use FLITrap to find information about different BDSC stock numbers.
 
 ### Downloading all of the files
 In order to run FLITrap without downloading a standalone version of FLITrap, you will need to download the "master-flitrap" zip. This can be accomplished by following the steps below. 
@@ -45,7 +69,7 @@ In order to run FLITrap without downloading a standalone version of FLITrap, you
 * Congratulations! You can now use FLITrap to find information about different BDSC stock numbers.
 
 ##### WAIT!!! I am using Python 3.X NOT Python 2.7!
-No problem! Just change line 62 from
+No problem! Just change line 62 in `flitrap.py` from
 ```python
 from Tkinter import *
 ```
