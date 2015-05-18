@@ -11,14 +11,14 @@
 
 
 ## What is FLITrap?
-FLITrap is a GUI application that makes use of several pieces of data obtained via webscraping from the Howard Hughes Medical Institute Janelia Farm's (HHMIJF) FlyLight[1], the Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] to allow a researcher to access data related to _D.melanogaster_ BDSC GAL4 lines without having to visit numerous websites. This in turn allows a researcher to work more efficiently and not waste his or her time searching for these data points. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf and other data points for a particular BDSC stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet) on the HHMIJF. Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application _should_ run on Microsoft's Windows, Apple's OSX, and various GNU/Linux distributions with little problems --- assuming the necessary modules are installed.
+FLITrap is a GUI application that makes use of several pieces of data obtained via webscraping from the Howard Hughes Medical Institute Janelia Farm's (HHMIJF) FlyLight[1], the Bloomington Drosophila Stock Center (BDSC)[2], and FlyBase[3] to allow a researcher to access data related to _D. melanogaster_ BDSC GAL4 lines without having to visit numerous websites. This in turn allows a researcher to work more efficiently and not waste his or her time searching for these data points. This GUI application is unique in several ways: the researcher is able to copy a BDSC stock number's FASTA sequence to his or her machine's clipboard with the press of a button, find FBsf and other data points for a particular BDSC stock number, and the researcher is able to press a button to view the expression data video for a searched line (provided he or she is connected to the Internet) on the HHMIJF. Moreover, this application was developed in Python 2.7.X and requires only the scientific Python stack to run. This application _should_ run on Microsoft's Windows, Apple's OSX, and various GNU/Linux distributions with little problems — assuming the necessary modules are installed.
 
 
 ## How do I run FLITrap on my machine?
 There are two ways to run FLITrap on your machine: use a standalone version of FLITrap, or download all of the files needed to run FLITrap. We will show you how to run FLITrap for both of these ways.
 
 ### Standalone versions
-We have made standalone versions of FLITrap available for the following:
+Standalone versions of FLITrap do not require you to have the scientific Python stack installed on your machine. We have made standalone versions of FLITrap available for the following:
 * OSX 10.10 (Yosemite)
 * OSX 10.7 (Lion)
 * Windows 7 (win32)
@@ -90,7 +90,7 @@ If you should happen to enter an invalid BDSC stock number, then you will see th
 ![](http://i.imgur.com/ihN6pNd.png "Screenshot of FLITrap with an invalid BDSC stock number")
 
 ## Acknowledgements
-This work is supported in part by the NSF grant DUE-0926721 and NIH-NIMHD grant 5G12MD007592. I would like to thank the University of Texas at El Paso's [Undergraduate Participation in Bioinformatics Training (UPBiT)](http://www.bioinformatics.utep.edu/UPBiT/index.php) for giving me the opportunity to participate in bioinformatics research as an undergraduate majoring in statistics. Under the mentorship of Professors Ming-Ying Leung and Kyung-An Han, I was given what I feel is a once-in-a-lifetime opportunity to learn more about statistics, computer science, and biology---beyond what was offered in the courses required for my degree.
+This work is supported in part by the NSF grant DUE-0926721 and NIH-NIMHD grant 5G12MD007592. I would like to thank the University of Texas at El Paso's [Undergraduate Participation in Bioinformatics Training (UPBiT)](http://www.bioinformatics.utep.edu/UPBiT/index.php) for giving me the opportunity to participate in bioinformatics research as an undergraduate majoring in statistics. Under the mentorship of Professors Ming-Ying Leung and Kyung-An Han, I was given what I feel is a once-in-a-lifetime opportunity to learn more about statistics, computer science, and biology — beyond what was offered in the courses required for my degree.
 
 ## References
 1. Pfeiffer BD, Jenett A, Hammonds AS, Ngo TT, Misra S. GAL4 driver collection of Rubin Laboratory at Janelia Farm. ([url](http://flweb.janelia.org/cgi-bin/flew.cgi))
