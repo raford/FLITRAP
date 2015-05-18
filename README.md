@@ -21,7 +21,6 @@ There are two ways to run FLITrap on your machine: use a standalone version of F
 We have made standalone versions of FLITrap available for the following:
 * OSX 10.10 (Yosemite)
 * OSX 10.7 (Lion)
-
 Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zkm6gbizss5pf1u/AAC5nJ-rn-YrjmJE0s3dLsyca?dl=0)
 
 
@@ -68,6 +67,6 @@ If you should happen to enter an invalid BDSC stock number, then you will see th
 This work is supported in part by the NSF grant DUE-0926721 and NIH-NIMHD grant 5G12MD007592. I would like to thank the University of Texas at El Paso's [Undergraduate Participation in Bioinformatics Training (UPBiT)](http://www.bioinformatics.utep.edu/UPBiT/index.php) for giving me the opportunity to participate in bioinformatics research as an undergraduate majoring in statistics. Under the mentorship of Professors Ming-Ying Leung and Kyung-An Han, I was given what I feel is a once-in-a-lifetime opportunity to learn more about statistics, computer science, and biology---beyond what was offered in the courses required for my degree.
 
 ## References
-1. HHMI Janelia Farm reference here
-2. BDSC reference here
-3. FlyBase reference here
+1. Pfeiffer BD, Jenett A, Hammonds AS, Ngo TT, Misra S. GAL4 driver collection of Rubin Laboratory at Janelia Farm. ([url](http://flweb.janelia.org/cgi-bin/flew.cgi))
+2. Bloomington Drosophila Stock Center. (2014). Janelia GAL4 stocks. ([url](http://flystocks.bio.indiana.edu/bloomhome.htm))
+3. St. Pierre SE, Ponting L, Stefancsik R, McQuilton P, the FlyBase Consortium. (2014). FlyBase 102 — advanced approaches to interrogating FlyBase. _Nucleic Acids Research_ 42(D1):D780-88. ([url](http://flybase.org/))
