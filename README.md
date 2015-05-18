@@ -21,6 +21,7 @@ There are two ways to run FLITrap on your machine: use a standalone version of F
 We have made standalone versions of FLITrap available for the following:
 * OSX 10.10 (Yosemite)
 * OSX 10.7 (Lion)
+* Windows 7 (win32)
 
 Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zkm6gbizss5pf1u/AAC5nJ-rn-YrjmJE0s3dLsyca?dl=0)
 
