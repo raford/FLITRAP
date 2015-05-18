@@ -21,7 +21,8 @@ There are two ways to run FLITrap on your machine: use a standalone version of F
 We have made standalone versions of FLITrap available for the following:
 * OSX 10.10 (Yosemite)
 * OSX 10.7 (Lion)
-Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zkm6gbizss5pf1u/AAC5nJ-rn-YrjmJE0s3dLsyca?dl=0)
+
+Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zkm6gbizss5pf1u/AAC5nJ-rn-YrjmJE0s3dLsyca?dl=0) The OSX standalone versions were created using [py2app](https://pythonhosted.org/py2app/).
 
 
 ### Downloading all of the files
