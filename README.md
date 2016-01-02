@@ -20,18 +20,17 @@ There are two ways to run FLITrap on your machine: use a standalone version of F
 ### Standalone versions
 Standalone versions of FLITrap do not require you to have the scientific Python stack installed on your machine. We have made standalone versions of FLITrap available for the following:
 * OSX 10.10 (Yosemite)
-* OSX 10.7 (Lion)
 * Windows 7 (win32)
 
 Standalone versions can be downloaded from [here.](https://www.dropbox.com/sh/zkm6gbizss5pf1u/AAC5nJ-rn-YrjmJE0s3dLsyca?dl=0)
 
 ##### Installing a standalone version of FLITrap on OSX
-Following these instructions will allow you to have a standalone version FLITrap on an OSX machine.
+Following these instructions will allow you to have a standalone version of FLITrap on an OSX machine.
 
 * Download the correct standalone version for your machine.
 ![](http://i.imgur.com/vYnZd0z.png)
 
-* Uncompress the `zip` file and it to view its contents, and open the `dist` folder.
+* Uncompress the `.zip` file to view its contents, and then open the `dist` folder.
 ![](http://i.imgur.com/VDHaNpx.png)
 
 * Click-on and drag `FLITrap` to your `Applications` folder.
@@ -51,7 +50,7 @@ Following these instructions will allow you to have a standalone version FLITrap
 * Congratulations! You can now use FLITrap to find information about different BDSC stock numbers.
 
 ### Downloading all of the files
-In order to run FLITrap without downloading a standalone version of FLITrap, you will need to download the "master-flitrap" zip. This can be accomplished by following the steps below. 
+In order to run FLITrap without downloading a standalone version of FLITrap, you will need to download the `master-flitrap.zip.` This can be accomplished by following the steps below. Note: You will need to have the scientific Python stack installed on your machine to run a nonstandalone version of FLITrap.
 
 * Download the `flitrap-master.zip` as seen below (by clicking the button in the red box).
 ![](http://i.imgur.com/gyrclLg.png)
